@@ -1,1 +1,7 @@
-{% include README.md url="https://raw.githubusercontent.com/modeled/modeled.netconf/master/README.md" %}
+---
+---
+
+{% capture README %}
+{% include modeled.netconf/README.md %}
+{% endcapture %}
+{{ README | markdownify }}
