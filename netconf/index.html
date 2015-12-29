@@ -1,7 +1,17 @@
 ---
 ---
 
-{% capture README %}
-{% include modeled.netconf/README.md %}
-{% endcapture %}
-{{ README | markdownify }}
+{% include head.html %}
+
+<div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/modeled/modeled.netconf/fork">Fork me on GitHub</a>
+  </div>
+</div>
+
+<div class="markdown-body">
+  {% capture README %}
+  {% include modeled.netconf/README.md %}
+  {% endcapture %}
+  {{ README | markdownify }}
+</div>
