@@ -1,0 +1,18 @@
+<head>
+  <title>
+    {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+
+  <link rel="stylesheet"
+        href="http://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.css"
+        />
+  <link rel="stylesheet"
+        href="https://sindresorhus.com/github-markdown-css/github-markdown.css"
+        />
+  <link rel="stylesheet"
+        href="https://rawgithub.com/richleland/pygments-css/master/monokai.css"
+        />
+
+  <link rel="stylesheet" href="{{ '/css/monokai.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/modeled.css' | prepend: site.baseurl }}">
+</head>
