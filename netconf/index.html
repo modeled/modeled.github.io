@@ -1,27 +1,11 @@
 ---
+github_project: modeled/modeled.netconf
+bitbucket_project: modeled/modeled.netconf
 ---
 
 {% include head.html %}
 
-<div id="fork-me-on-github" class="github-fork-ribbon-wrapper right">
-  <div class="github-fork-ribbon">
-    <a href="https://github.com/modeled/modeled.netconf/fork">
-      Fork me on GitHub
-    </a>
-  </div>
-</div>
+{% include zimmermanncode.github.io/_includes/fork-me-on-github.html %}
+{% include zimmermanncode.github.io/_includes/fork-me-on-bitbucket.html %}
 
-<div id="fork-me-on-bitbucket" class="github-fork-ribbon-wrapper right">
-  <div class="github-fork-ribbon">
-    <a href="https://bitbucket.org/modeled/modeled.netconf/fork">
-      Fork me with Hg on Bitbucket
-    </a>
-  </div>
-</div>
-
-<div class="markdown-body">
-  {% capture README %}
-  {% include modeled.netconf/README.md %}
-  {% endcapture %}
-  {{ README | markdownify }}
-</div>
+{% include zimmermanncode.github.io/_includes/markdown.html path='modeled.netconf/README.md' %}
